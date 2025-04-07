@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="floppa-icon.png" />
+  <title>EmüMaster</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      background-color: #1e1e1e;
+    }
+    .console-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .console-item {
+      background-color: #1e1e1e;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .console-item:hover {
+      transform: scale(1.05);
+    }
+    .console-item img {
+      width: 60px;
+      height: 60px;
+    }
+    .console-name {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>EmüMaster</header>
+  <div class="console-grid">
+    <div class="console-item"><img src="icons/psp.png"><div class="console-name">PSP</div></div>
+    <div class="console-item"><img src="icons/ps1.png"><div class="console-name">PS1</div></div>
+    <div class="console-item"><img src="icons/nds.png"><div class="console-name">Nintendo DS</div></div>
+    <div class="console-item"><img src="icons/gba.png"><div class="console-name">GBA</div></div>
+    <div class="console-item"><img src="icons/snes.png"><div class="console-name">SNES</div></div>
+    <div class="console-item"><img src="icons/nes.png"><div class="console-name">NES</div></div>
+    <div class="console-item"><img src="icons/n64.png"><div class="console-name">N64</div></div>
+    <div class="console-item"><img src="icons/dreamcast.png"><div class="console-name">Dreamcast</div></div>
+    <div class="console-item"><img src="icons/mame.png"><div class="console-name">MAME</div></div>
+  </div>
+</body>
+</html>
